@@ -9,6 +9,7 @@ BatchDirectory = dir
 
 
 For File in BatchDirectory
-    Append
+    If File.endswith(.bat)
+        Append
 
 Mainloop()
