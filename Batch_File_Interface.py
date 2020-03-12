@@ -1,15 +1,14 @@
-Import is
-From tkinter import tk
+import os
+from tkinter import Tk, Button, Label, Frame
 
 
+BatchInterface = Tk()
 
-BatchInterface = tk()
-
-BatchDirectory = dir
+BatchDirectory = 'D:/Google Drive/Games/Game Saves/2 - Batch Back Up'
 
 
-For File in BatchDirectory
-    If File.endswith(.bat)
-        Append
+for File in os.listdir(BatchDirectory):
+    if File.endswith('.bat'):
+        print(File)
 
-Mainloop()
+BatchInterface.mainloop()
